@@ -12,8 +12,22 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+   return view('page.index');
 });
+
+Route::get('/book-now', function () {
+    return view('page.book-now');
+});
+
+Route::get('/special-events', function () {
+return view('page.special-events');
+});
+
+Route::get('/contact-us', function () {
+    return view('page.contact-us');
+});
+
+
 
 Auth::routes();
 
